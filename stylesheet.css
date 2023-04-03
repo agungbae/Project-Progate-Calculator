@@ -1,0 +1,85 @@
+.calculator {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 400px;
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 100px;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    font-size: 36px;
+    border: none;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number,
+.operator,
+.percentage,
+.decimal,
+.equal-sign {
+    height: 80px;
+    background-color: grey;
+    border: px solid black;
+    font-size: 36px;
+    color: #fff;
+    width: calc(25% - 5px);
+    margin-bottom: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.all-clear,
+.zero-btn {
+    height: 80px;
+    background-color: grey;
+    border: 2px solid black;
+    font-size: 36px;
+    color: #fff;
+    width: calc(50% - 5px);
+    margin-bottom: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.all-clear,
+.percentage,
+.devide {
+    margin-top: 5px;
+}
+
+.operator,
+.equal-sign {
+    background-color: orange;
+    color: #fff;
+}
+
+.number:hover, 
+.percentage:hover, 
+.decimal:hover, 
+.all-clear:hover {
+    background-color: darkgrey;
+}
+
+.operator:hover,
+.equal-sign:hover {
+    background-color: darkorange;
+    color: #fff;
+}
